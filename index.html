@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <div class="logo">
+            <h1>sneakers</h1>
+        </div>
+ 
+        <ul class="nav-Links">
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>   
+            <li class="dont-show"><a href="#"></a></li>
+            <li class="dont-show"><a href="#"></a></li> 
+            <li class="dont-show"><a href="#"></a></li> 
+            <li class="dont-show"><a href="#"></a></li> 
+            <li class="dont-show"><a href="#"></a></li> 
+            <li class="dont-show"><a href="#"></a></li> 
+            <li class="dont-show"><a href="#"></a></li> 
+            <li class="dont-show"><a href="#"></a></li> 
+        </ul>
+        
+        <a href="#"><img src="images/icon-cart.svg"><span class="zero11">0</span></a>
+        <a href="#"><img class="img1" src="images/image-avatar.png" ></a>  
+      </nav>
+      <hr class="line">
+
+     <!-- main section -->
+      <div class="container">
+
+        <div class="box1">
+            <img class="img-1"  src="images/image1.png" />
+            <div class="inner-div">
+            <img class="img-2" src="images/image1.png" />
+            <img class="img-2" src="images/image2.png" />
+            <img class="img-2" src="images/image3.png" />
+            <img class="img-2" src="images/image4.png" />
+            </div>
+        </div>
+  
+  
+        <div class="box2">
+          <p class="snk-p">SNEAKER COMPANY</p>
+          <h2 class="fall-h2">Fall Limited Edition Sneakers</h2>
+          <p class="descrpt">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole. they'll withstand everything
+            the weather can offer.
+          </p>
+          <div class="last-child">
+          <div class="child">
+          <h2 class="price1">$1,240.80 <span class="sm-percent">50%</span></h2>
+          </div>
+          <div class="child1">
+          <p class="strike-dollar"><strike>$230.00</strike></p>
+          </div>
+           </div>
+          
+          
+          <button class="plus-btn"><span onclick="totalClick(-1)" class="minus all">-</span><span id="totalClicks" class="zero all">0</span><span onclick="totalClick(1)"  class="plus all">+</span></button>
+          <button onclick="totalClick(0)" class="add-cart-btn"><span><img class="cart2" src="images/icon-cart.svg"></span><span>Add to cart</span></button>
+          
+        </div>
+
+      </div>
+    <script src="app.js"></script>
+</body>
+</html>
